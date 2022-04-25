@@ -1,0 +1,65 @@
+%YAML:1.0
+
+C_a2b:
+  data: [0.99, -0.01, 0.001,
+         0,    0.99,  -0.002,
+         0,    0,     0.997]
+
+C_g2b:
+  data: [1.04, -0.01, 0.001,
+         0.01,    0.99,  -0.002,
+         -0.01,    0.01,     0.997]        
+
+ba:
+  data: [0,
+         0,
+         0]
+
+bg:
+  data: [0,
+         0,
+         0]
+
+wheel_sf: 1.0
+delay_track: false
+
+local_gravity: 9.81
+
+delta_dx: 0
+
+
+sigPos: 0.1
+sigVel: 0.1
+sig_tilt: 2
+sig_alpha: 0.01
+sigBa: 5
+sigBg: 120
+rtq_pos: 1
+awn: 900
+gwn: 0.3
+acn: 1
+gcn: 3
+ac_tau: 600
+gc_tau: 600
+
+encoder_meas_stddev: 1
+default_gnss_vel_stddev: 0.1
+
+acc_deviation_th: 0.035
+gyro_deviation_th: 0.0025
+spd_th: 0.01
+window_tw: 1
+least_imu_queue_length: 60
+least_spd_queue_length: 40
+
+align_vec_length: 4
+align_min_delta_distance: 5
+coarse_alignment_timeout: 30
+fine_alignment_timeout: 30
+gnss_outage_timeout: 120
+odometry_converge_threshold_Ppos: 0.5
+odometry_converge_threshold_Ptilt: 2
+fine_alignment_converge_threshold_Ppos: 0.5
+fine_alignment_converge_threshold_Pvel: 0.2
+fine_alignment_converge_threshold_Pyaw: 0.3
+
